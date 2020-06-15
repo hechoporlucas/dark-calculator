@@ -1,5 +1,54 @@
 body{
+    padding: 0;
+    margin: 0;
     background-color: #000000;
     font-family: Rubik, sans-serif;
-    font-weight: 900;
+    font-weight: 400;
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)  repeat(5, 100px);
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(113, 255, 57, 0.5);
+}
+
+.calculator-grid > button:hover{
+    background-color: rgba(113, 255, 57, 0.9);
+}
+
+.boton-doble{
+    grid-column: span 2;
+}
+
+.calculator-display{
+    color: white;
+    grid-column: 1 / -1;
+    background-color: rgba(113, 255, 57, 0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calculator-display .up-operando{
+    color:rgba(255, 255, 255, .9);
+    font-size: 2rem;
+}
+
+.calculator-display .down-operando{
+    font-size: 3rem;
 }
