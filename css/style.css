@@ -44,11 +44,11 @@ body{
     word-break: break-all;
 }
 
-.calculator-display .up-operando{
+.calculator-display .operando-anterior{
     color:rgba(255, 255, 255, .9);
     font-size: 2rem;
 }
 
-.calculator-display .down-operando{
+.calculator-display .operando-actual{
     font-size: 3rem;
 }
